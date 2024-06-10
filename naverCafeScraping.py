@@ -75,7 +75,7 @@ board_dict = {
     "기타" : "46"
     }
 board_keys = list(board_dict.keys())
-maxContentCnt = 10
+maxContentCnt = 1900
 # 메뉴로 이동
 # f"#menuLink{board_dict[board_keys[n]]}"
 for boardNm in board_keys :
@@ -114,6 +114,7 @@ for boardNm in board_keys :
     driver.switch_to.default_content()
 
 # scrapped data write
+print(f"scrapped item : {data.count}")
 writer.writerows(data)
 f.close
 driver.quit()
