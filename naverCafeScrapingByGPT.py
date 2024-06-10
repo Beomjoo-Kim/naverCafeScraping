@@ -11,6 +11,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from tqdm import tqdm
 import csv
 
+# chatGPT가 생성한 소스코드
+
 # CSV 파일 생성 및 열기
 with open("./naverCafeScappedData.csv", "w", newline='', encoding='utf-8') as f:
     writer = csv.writer(f)
